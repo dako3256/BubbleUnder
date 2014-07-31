@@ -25,6 +25,7 @@ h1 {
     padding-bottom: .2em;
     padding-left: .4em;
     margin: 0px;
+    background: navy url(backgrounds/header-bg.jpg) repeat-y right;
 }
 
 h2 {
@@ -58,6 +59,7 @@ p {
     padding-bottom: .2em;
     padding-left: .8em;
     margin: 0px;
+    background: #bed8f3 url(backgrounds/tagline-fade.jpg) repeat-y right;
 }
 
 em {
@@ -95,7 +97,8 @@ a:active {
 
 #navigation {
     width: 180px;
-    background-color: #7da5d8;
+    height: 484px;
+    background: #7da5d8 url( backgrounds/nav-bg.jpg) no-repeat;
 }
 
 #header {
@@ -149,4 +152,37 @@ coordinates measured from the top-left corner of the browser's content display.
     padding-bottom: 20px;
     border-bottom: 1px solid navy;
     margin-bottom: 10px;
+}
+
+table.events {
+    border-collapse: collapse;
+}
+
+table.events th, table.events td {
+    padding: 4px;
+    border: 1px solid #000066;
+}
+
+table.events th {
+    font-size: small;
+    text-align: left;
+    background: #241374 url(backgrounds/header-bg.jpg);
+    color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+table.events td {
+    font-size: small;
+    background: #e2edff url(backgrounds/td.jpg) repeat-x top;
+}
+
+table.events caption {
+    color: #000066;
+    font-size: small;
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
