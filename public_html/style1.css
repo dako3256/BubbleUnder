@@ -29,10 +29,16 @@ h1 {
 }
 
 h2 {
+    text-shadow: 5px 5px 2px gray;
+}
+
+h2 {
     color: navy;
     font-size: 130%;
     font-weight: normal;
     padding-top: 15px;
+    font-family: 'Candal', sans-serif;
+    font-size: 2em;
 }
 
 h2, ul {
@@ -95,14 +101,51 @@ a:active {
     letter-spacing: 0.05em;
 }
 
-#navigation {
+aside {
+    border: 2px solid gray;
+    border-radius: 20px;
+    display: block;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    background: white;
+    font-style: italic;
+    color: gray;
+}
+
+aside blockquote {
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 0 0 0.5em 0;
+    font-style: normal;
+    color: #006;
+}
+
+nav {
     width: 180px;
     height: 484px;
     background: #7da5d8 url( backgrounds/nav-bg.jpg) no-repeat;
+    display: block; /* Only for IE8 or less */
 }
 
-#header {
+nav a {
+    text-shadow: 1px 1px 2px white, -1px -1px 2px white;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    text-shadow: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 15px;
+}
+
+header {
     border-top: 3px solid #7da5d8;
+    display: block; /* Only for IE8 or less */
 }
 
 /*
@@ -131,12 +174,11 @@ coordinates measured from the top-left corner of the browser's content display.
     margin: 10px;
 }
 
-.galleryphoto p {
-    font-size: 65%;
-    font-weight: bold;
-    margin-top: 0;
-    width: 430px;
-    line-height: 1.4em;
+figure {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid navy;
+    margin-bottom: 20px;
 }
 
 .photocredit {
@@ -144,14 +186,25 @@ coordinates measured from the top-left corner of the browser's content display.
     color: gray;
 }
 
-.galleryphoto img {
-    border: 15px solid white;
+figcaption {
+    display: block;
+    font-size: 65%;
+    font-weight: bold;
+    margin-top: 0;
+    width: 430px;
+    line-height: 1.4em;
 }
 
-.galleryphoto {
-    padding-bottom: 20px;
-    border-bottom: 1px solid navy;
-    margin-bottom: 10px;
+figcaption span {
+    font-weight: normal;
+    color: gray;
+}
+
+figure img {
+    border: 15px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black, -2px -2px 15px black;
+    margin-bottom: 10px /* added just to give the shadow some breathing space */
 }
 
 table.events {
